@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
+extends ./layout.pug
 
-<head>
-    <title>Page Not Found</title>
-    <link rel="stylesheet" href="../public/stylesheets/style.css">
-</head>
-
-<body>
-    <h1>Server Error</h1>
-    <p>Sorry! There was an unexpected error on the server.</p>
-</body>
-
-</html>
+block content
+  h1 Server Error
+  p Sorry! There was an unexpected error on the server.
+  p=message 
