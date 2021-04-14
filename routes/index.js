@@ -50,7 +50,7 @@ router.get("/books/:id", function (req, res, next) {
       if (book) {
         res.render("update-book", { book: book, title: book.title });
       } else {
-        res.render("page-not-found");
+        next();
       }
     })
     .catch((error) => {
